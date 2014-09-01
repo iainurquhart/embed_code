@@ -4,7 +4,7 @@
 
 Embed Code gives your publishers an embed code per Grid row, primarily for creating shortcodes.
 
-![Field Output](http://cl.ly/image/0e2y2o3G1v0H)
+![Field Output](http://f.cl.ly/items/4142100Q0N452n0q322x/Image%202014-09-01%20at%2010.39.49%20pm.png)
 
 Cell Settings allow you to use any prefix you like, the row count of each Grid is simply appended to your prefix.
 
