@@ -27,12 +27,12 @@ Essentialy any placement of {image:x} will be replaced with the following markup
 
 To achieve this in EE templates:
 
-1. Loop through grid rows and create EE snippets with each grid row, for example {image:1}, {image:2} etc.
+1. Loop through Grid rows and create EE snippets with each Grid row, for example {image:1}, {image:2} etc.
 2. Replace any instances of the created snippets with the values/markup you define, template side.
 
 ### Grid configuration
 
-Create a grid field with the short name of `content_images`. Add 4 cells which will contain the embed code, layout options, the image upload/select, and an optional caption.
+Create a Grid field with the short name of `content_images`. Add 4 cells which will contain the embed code, layout options, the image upload/select, and an optional caption.
 
 ![Field Settings](http://f.cl.ly/items/1F033L1s0L1k0z1I3m25/Image%202014-09-02%20at%2012.26.35%20pm.png)
 
@@ -48,7 +48,7 @@ For creating the embed Snippets to be parsed by EE, I use two add-ons: Stash, an
 
 Stash allows you to create snippets on the fly with any template markup you want. We want to create snippets such as `{image:1}` that will magically transform to become our `<figure>` markup above.
 
-So inside our channel entries tag, we loop the grid field and create those snippets:
+So inside our channel entries tag, we loop the Grid field and create those snippets:
 
 	{content_images} {!-- Grid loop --}
 		{exp:stash:set name="image:{content_images:count}" type="snippet"}
