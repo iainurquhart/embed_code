@@ -16,7 +16,7 @@ Embedding dynamic content via shortcodes is not new in ExpressionEngine, we've b
 
 The cell does not store any data, so outputting the cell contents is pointless. 
 
-The basic principle is you want your client to upload an image, and not worry about any html, image resizing and styling.
+The basic principle is you want your client to upload an image, place it anywhere in the content area and not have to worry about any html, image resizing and styling.
 
 Essentialy any placement of {image:x} will be replaced with the following markup:
 
