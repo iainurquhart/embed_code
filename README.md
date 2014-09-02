@@ -28,7 +28,7 @@ Essentialy any placement of {image:x} will be replaced with the following markup
 To achieve this in EE templates:
 
 1. Loop through grid rows and create EE snippets with each grid row, for example {image:1}, {image:2} etc.
-2. You replace any instances of the created snippets with the values/markup you define, template side.
+2. Replace any instances of the created snippets with the values/markup you define, template side.
 
 ### Grid configuration
 
