@@ -34,13 +34,13 @@ To achieve this in EE templates:
 
 Create a grid field with the short name of `content_images`. Add 4 cells which will contain the embed code, layout options, the image upload/select, and an optional caption.
 
-![Field Settings](http://f.cl.ly/items/1F033L1s0L1k0z1I3m25/Image%202014-09-02%20at%2012.26.35%20pm.png]
+![Field Settings](http://f.cl.ly/items/1F033L1s0L1k0z1I3m25/Image%202014-09-02%20at%2012.26.35%20pm.png)
 
 Go ahead and publish an entry with multiple images in your Grid field, copy the embed codes into your main content field which will contain the final rendered images.
 
 You should have something like this:
 
-![Field Settings](http://f.cl.ly/items/0E0M020P160m0m1o2d0G/Image%202014-09-02%20at%2012.31.32%20pm.png]
+![Field Settings](http://f.cl.ly/items/0E0M020P160m0m1o2d0G/Image%202014-09-02%20at%2012.31.32%20pm.png)
 
 ### Output to templates
 
