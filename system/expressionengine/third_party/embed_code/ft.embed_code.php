@@ -50,14 +50,28 @@ class Embed_code_ft extends EE_Fieldtype {
     {
         $embed_prefix = (isset($this->settings['embed_prefix'])) ? $this->settings['embed_prefix'] : '';
 
-        ee()->cp->load_package_js('cell');
+        // ee()->cp->load_package_js('cell');
 
+        // ee()->cp->add_to_foot(
+        //     "<script>
+        //         var bindEvents = ['display', 'remove', 'afterSort'];
+        //         for (var i in bindEvents) {
+        //             Grid.bind(\"embed_code\", bindEvents[i], function(cell){
+        //                embed_code_init('".$this->settings['grid_field_id']."', '".$embed_prefix."');
+        //             });
+        //         };
+        //     </script>"
+        // );
+
+        // Grid within a template and not just within CP
+        ee()->cp->add_to_foot('<script src="'.URL_THIRD_THEMES.'embed_code/javascript/cell.js" type="text/javascript"></script>');
+        
         ee()->cp->add_to_foot(
             "<script>
                 var bindEvents = ['display', 'remove', 'afterSort'];
                 for (var i in bindEvents) {
                     Grid.bind(\"embed_code\", bindEvents[i], function(cell){
-                       embed_code_init('".$this->settings['grid_field_id']."', '".$embed_prefix."');
+                       embed_code_init('".$this->name."', '".$embed_prefix."');
                     });
                 };
             </script>"
